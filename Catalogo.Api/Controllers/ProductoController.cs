@@ -20,8 +20,8 @@ namespace Catalogo.Api.Controllers
         public async Task<ActionResult<IEnumerable<Producto>>> GetProductos()
         {
             return await _context.Producto
-                .Include(p => p.Categoria) // Incluye la categoría relacionada
-                .Include(p => p.Marca)     // Incluye la marca relacionada
+                .Include(p => p.Categoria)
+                .Include(p => p.Marca)
                 .ToListAsync();
         }
 

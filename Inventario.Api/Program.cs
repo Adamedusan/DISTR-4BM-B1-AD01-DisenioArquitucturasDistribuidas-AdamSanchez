@@ -4,7 +4,6 @@ using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("InventarioConnection");
 builder.Services.AddDbContext<InventarioDBContext>(options =>
 {
@@ -14,7 +13,6 @@ builder.Services.AddDbContext<InventarioDBContext>(options =>
     }
 });
 
-// Cliente HTTP para consultar otros microservicios (por ejemplo Catalogo.Api)
 builder.Services.AddHttpClient();
 
 builder.Services.AddControllers()
@@ -23,13 +21,11 @@ builder.Services.AddControllers()
         options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
     });
 
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 namespace Catalogo.Api.Models
 {
@@ -28,7 +28,6 @@ namespace Catalogo.Api.Models
         [Column("Precio", TypeName = "decimal(18,2)")]
         public decimal Precio { get; set; }
 
-        // true: Activo, false: Inactivo
         [Column("Estado")]
         public bool Estado { get; set; }
 
