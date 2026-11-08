@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Pedidos.Api.Data;
 using PedidosModel = Pedidos.Api.Models.Pedido;
@@ -56,8 +56,17 @@ namespace Pedidos.Api.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> BorrarPedido(int id)
         {
-            var pedido = await _context.Pedidos.FindAsync(id);
+            var pedido = await _context.Pedidos
+                .Include(p => p.Detalles)
+                .FirstOrDefaultAsync(p => p.IdPedido == id);
+
             if (pedido == null) return NotFound();
+
+            if (pedido.Detalles != null && pedido.Detalles.Any())
+            {
+                _context.DetallePedido.RemoveRange(pedido.Detalles);
+            }
+
             _context.Pedidos.Remove(pedido);
             await _context.SaveChangesAsync();
             return NoContent();

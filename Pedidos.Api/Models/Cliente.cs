@@ -1,5 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace Pedidos.Api.Models
 {
@@ -25,6 +26,7 @@ namespace Pedidos.Api.Models
         [Column("Correo")]
         public string Correo { get; set; } = string.Empty;
 
+        [JsonIgnore]
         public ICollection<Pedido> Pedidos { get; set; } = new List<Pedido>();
     }
 }

@@ -1,5 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace Pedidos.Api.Models
 {
@@ -23,6 +24,7 @@ namespace Pedidos.Api.Models
         public decimal PrecioUnitario { get; set; }
 
         [ForeignKey(nameof(IdPedido))]
+        [JsonIgnore]
         public Pedido? Pedido { get; set; }
     }
 }

@@ -1,5 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace Inventario.Api.Models
 {
@@ -20,6 +21,7 @@ namespace Inventario.Api.Models
         public int Stock { get; set; }
 
         [ForeignKey(nameof(IdBodega))]
+        [JsonIgnore]
         public Bodega? Bodega { get; set; }
     }
 }

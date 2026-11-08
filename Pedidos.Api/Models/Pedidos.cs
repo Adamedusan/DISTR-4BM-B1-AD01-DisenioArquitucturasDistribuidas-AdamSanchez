@@ -1,5 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace Pedidos.Api.Models
 {
@@ -25,8 +26,10 @@ namespace Pedidos.Api.Models
         public string Estado { get; set; } = string.Empty;
 
         [ForeignKey(nameof(IdCliente))]
+        [JsonIgnore]
         public Cliente? Cliente { get; set; }
 
+        [JsonIgnore]
         public ICollection<DetallePedido> Detalles { get; set; } = new List<DetallePedido>();
     }
 }

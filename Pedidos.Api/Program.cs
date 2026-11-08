@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Pedidos.Api.Data;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,7 +17,12 @@ builder.Services.AddDbContext<PedidosDBContext>(options =>
 // Cliente HTTP para consultar otros microservicios (Catalogo.Api e Inventario.Api)
 builder.Services.AddHttpClient();
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+    });
+
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 builder.Services.AddSwaggerGen();

@@ -1,0 +1,1282 @@
+{
+  "info": {
+    "_postman_id": "816e9118-38b6-444a-8007-21cee01835ed",
+    "name": "DISTR-4AM-B1-AD01",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "47600601"
+  },
+  "item": [
+    {
+      "name": "CATALOGO-API",
+      "item": [
+        {
+          "name": "CATEGORIA-API",
+          "item": [
+            {
+              "name": "GET-CATEGORIA",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7204/api/Categoria",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7204",
+                  "path": [
+                    "api",
+                    "Categoria"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET-CATEGORIAID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7204/api/Categoria/1",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7204",
+                  "path": [
+                    "api",
+                    "Categoria",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "POST-CATEGORIA",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"nombre\": \"Monitores\",\r\n  \"descripcion\": \"Pantallas y monitores de alta resolución para estaciones de trabajo\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7204/api/Categoria",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7204",
+                  "path": [
+                    "api",
+                    "Categoria"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "PUT-CATEGORIA",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"idCategoria\": 5,\r\n  \"nombre\": \"Monitores y Pantallas\",\r\n  \"descripcion\": \"Monitores de alta resolución, accesorios y soportes ergonómicos\"\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7204/api/Categoria/5",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7204",
+                  "path": [
+                    "api",
+                    "Categoria",
+                    "5"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "DELETE-CATEGORIA",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7204/api/Categoria/5",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7204",
+                  "path": [
+                    "api",
+                    "Categoria",
+                    "5"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "MARCA-API",
+          "item": [
+            {
+              "name": "GET-MARCA",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7204/api/Marca",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7204",
+                  "path": [
+                    "api",
+                    "Marca"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET-MARCAID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7204/api/MarcA/1",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7204",
+                  "path": [
+                    "api",
+                    "MarcA",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "POST-MARCA",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"nombre\": \"Lenovo\",\r\n  \"paisOrigen\": \"Alemania\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7204/api/Marca",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7204",
+                  "path": [
+                    "api",
+                    "Marca"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "PUT-MARCA",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": " {\r\n    \"idMarca\": 5,\r\n    \"nombre\": \"Huawei\",\r\n    \"paisOrigen\": \"Corea\"\r\n  }",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7204/api/Marca/5",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7204",
+                  "path": [
+                    "api",
+                    "Marca",
+                    "5"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "DELETE-MARCA",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7204/api/Marca/4",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7204",
+                  "path": [
+                    "api",
+                    "Marca",
+                    "4"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "PRODUCTO-API",
+          "item": [
+            {
+              "name": "GET-PRODUCTO",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7204/api/Producto",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7204",
+                  "path": [
+                    "api",
+                    "Producto"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET-PRODUCTOID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7204/api/Producto/1",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7204",
+                  "path": [
+                    "api",
+                    "Producto",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "POST-PRODUCTO",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"idCategoria\": 1,\r\n  \"idMarca\": 1,\r\n  \"nombre\": \"Smart TV 55 Pulgadas 4K\",\r\n  \"sku\": \"TV-SAM-55-001\",\r\n  \"precio\": 549.99,\r\n  \"estado\": true\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7204/api/Producto",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7204",
+                  "path": [
+                    "api",
+                    "Producto"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "PUT-PRODUCTO",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n\"idProducto\":5,\r\n  \"idCategoria\": 2,\r\n  \"idMarca\": 2,\r\n  \"nombre\": \"IPHONE XL\",\r\n  \"sku\": \"SMPHONE-APPL-XL-002\",\r\n  \"precio\": 700000,\r\n  \"estado\": true\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7204/api/Producto/5",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7204",
+                  "path": [
+                    "api",
+                    "Producto",
+                    "5"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "DELETE-PRODUCTO",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7204/api/Producto/6",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7204",
+                  "path": [
+                    "api",
+                    "Producto",
+                    "6"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "INVENTARIO-API",
+      "item": [
+        {
+          "name": "BODEGA-API",
+          "item": [
+            {
+              "name": "GET-BODEGA",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7154/api/Bodega",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7154",
+                  "path": [
+                    "api",
+                    "Bodega"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET-BODEGAID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7154/api/Bodega/1",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7154",
+                  "path": [
+                    "api",
+                    "Bodega",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "POST-BODEGA",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"idBodega\": 0,\r\n  \"nombre\": \"Bodega prensa\",\r\n  \"ciudad\": \"Quito\",\r\n  \"direccion\": \"Av.prensa y 10 de agosto\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7154/api/Bodega",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7154",
+                  "path": [
+                    "api",
+                    "Bodega"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "PUT-BODEGA",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"idBodega\": 4,\r\n  \"nombre\": \"Bodega prensa\",\r\n  \"ciudad\": \"Quito\",\r\n  \"direccion\": \"Av.prensa y logroño\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7154/api/Bodega/4",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7154",
+                  "path": [
+                    "api",
+                    "Bodega",
+                    "4"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "DELETE-BODEGA",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7154/api/Bodega/3",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7154",
+                  "path": [
+                    "api",
+                    "Bodega",
+                    "3"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "EXISTENCIAS-API",
+          "item": [
+            {
+              "name": "GET-EXISTENCIAS",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7154/api/Existencias",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7154",
+                  "path": [
+                    "api",
+                    "Existencias"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET-EXISTENCIASID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7154/api/Existencias",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7154",
+                  "path": [
+                    "api",
+                    "Existencias"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "POST-EXISTENCIAS",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"idExistencia\": 0,\r\n  \"idProducto\": 2,\r\n  \"idBodega\": 2,\r\n  \"stock\": 2000\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7154/api/Existencias",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7154",
+                  "path": [
+                    "api",
+                    "Existencias"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "PUT-EXISTENCIAS",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"idExistencia\": 6,\r\n  \"idProducto\": 1,\r\n  \"idBodega\": 2,\r\n  \"stock\": 100\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7154/api/Existencias/6",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7154",
+                  "path": [
+                    "api",
+                    "Existencias",
+                    "6"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "DELETE-EXISTENCIAS",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7154/api/Existencias",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7154",
+                  "path": [
+                    "api",
+                    "Existencias"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "MOVIMIENTOSINV-API",
+          "item": [
+            {
+              "name": "GET-MOVIMIENTOS",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7154/api/MovimientosInv",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7154",
+                  "path": [
+                    "api",
+                    "MovimientosInv"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET-MOVIMIENTOSID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7154/api/MovimientosInv/4",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7154",
+                  "path": [
+                    "api",
+                    "MovimientosInv",
+                    "4"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "POST-MOVIMIENTOS",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"idMovimiento\": 0,\r\n  \"idProducto\": 3,\r\n  \"idBodega\": 2,\r\n  \"tipo\": \"Salida\",\r\n  \"cantidad\": 20,\r\n  \"fecha\": \"2026-11-08T00:46:42.843Z\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7154/api/MovimientosInv",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7154",
+                  "path": [
+                    "api",
+                    "MovimientosInv"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "PUT-MOVIMIENTOS",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"idMovimiento\": 5,\r\n  \"idProducto\": 1,\r\n  \"idBodega\": 2,\r\n  \"tipo\": \"Entrada\",\r\n  \"cantidad\": 20,\r\n  \"fecha\": \"2026-11-08T00:46:42.843Z\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7154/api/MovimientosInv/5",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7154",
+                  "path": [
+                    "api",
+                    "MovimientosInv",
+                    "5"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "DELETE/MOVIMIENTOS",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7154/api/MovimientosInv/5",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7154",
+                  "path": [
+                    "api",
+                    "MovimientosInv",
+                    "5"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "RESERVASTOCK-API",
+          "item": [
+            {
+              "name": "GET-RESERVA",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7154/api/ReservaStock",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7154",
+                  "path": [
+                    "api",
+                    "ReservaStock"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET-RESERVAID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7154/api/ReservaStock/2",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7154",
+                  "path": [
+                    "api",
+                    "ReservaStock",
+                    "2"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "POST-RESERVA",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "  {\r\n    \"idReserva\": 0,\r\n    \"idProducto\": 1,\r\n    \"idBodega\": 2,\r\n    \"cantidad\": 22,\r\n    \"estado\": \"Completo\"\r\n  }",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7154/api/ReservaStock",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7154",
+                  "path": [
+                    "api",
+                    "ReservaStock"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "PUT-RESERVA",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"idReserva\": 5,\r\n    \"idProducto\": 1,\r\n    \"idBodega\": 2,\r\n    \"cantidad\": 22,\r\n    \"estado\": \"Pendiente\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7154/api/ReservaStock/5",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7154",
+                  "path": [
+                    "api",
+                    "ReservaStock",
+                    "5"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "DELETE-RESERVA",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7154/api/ReservaStock/5",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7154",
+                  "path": [
+                    "api",
+                    "ReservaStock",
+                    "5"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PEDIDOS-API",
+      "item": [
+        {
+          "name": "PEDIDOS-API",
+          "item": [
+            {
+              "name": "GET-PEDIDOS",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7130/api/Pedidos",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7130",
+                  "path": [
+                    "api",
+                    "Pedidos"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET-PEDIDOSID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7130/api/Pedidos/2",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7130",
+                  "path": [
+                    "api",
+                    "Pedidos",
+                    "2"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "POST-PEDIDOS",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"idPedido\": 0,\r\n    \"idCliente\": 3,\r\n    \"fecha\": \"2026-11-07T14:06:57.267\",\r\n    \"total\": 10.00,\r\n    \"estado\": \"Procesando\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7130/api/Pedidos",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7130",
+                  "path": [
+                    "api",
+                    "Pedidos"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "PUT-PEDIDOS",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"idPedido\": 4,\r\n    \"idCliente\": 2,\r\n    \"fecha\": \"2026-11-07T14:06:57.267\",\r\n    \"total\": 100.00,\r\n    \"estado\": \"Procesando\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7130/api/Pedidos/4",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7130",
+                  "path": [
+                    "api",
+                    "Pedidos",
+                    "4"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "DELETE-PEDIDOS",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7130/api/Pedidos",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7130",
+                  "path": [
+                    "api",
+                    "Pedidos"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "DETALLEPEDIDOS-API",
+          "item": [
+            {
+              "name": "GET-DETALLE",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7130/api/DetallePedidos",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7130",
+                  "path": [
+                    "api",
+                    "DetallePedidos"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET-DETALLEID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7130/api/DetallePedidos/4",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7130",
+                  "path": [
+                    "api",
+                    "DetallePedidos",
+                    "4"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "POST-DETALLE",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n        \"idDetalle\": 0,\r\n        \"idPedido\": 1,\r\n        \"idProducto\": 2,\r\n        \"cantidad\": 22,\r\n        \"precioUnitario\": 15.00\r\n    }",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7130/api/DetallePedidos",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7130",
+                  "path": [
+                    "api",
+                    "DetallePedidos"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "PUT-DETALLE",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"idDetalle\": 5,\r\n    \"idPedido\": 1,\r\n    \"idProducto\": 2,\r\n    \"cantidad\": 22,\r\n    \"precioUnitario\": 25.00\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7130/api/DetallePedidos/5",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7130",
+                  "path": [
+                    "api",
+                    "DetallePedidos",
+                    "5"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "DELETE-DETALLE",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7130/api/DetallePedidos/5",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7130",
+                  "path": [
+                    "api",
+                    "DetallePedidos",
+                    "5"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "CLIENTE-API",
+          "item": [
+            {
+              "name": "GET-CLIENTE",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7130/api/Cliente",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7130",
+                  "path": [
+                    "api",
+                    "Cliente"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET-CLIENTEID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7130/api/Cliente/2",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7130",
+                  "path": [
+                    "api",
+                    "Cliente",
+                    "2"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "POST-CLIENTE",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"idCliente\": 0,\r\n    \"nombres\": \"Jeremy Padilla\",\r\n    \"cedula\": \"1798765432\",\r\n    \"correo\": \"anapadi@email.com\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7130/api/Cliente",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7130",
+                  "path": [
+                    "api",
+                    "Cliente"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "PUT-CLIENTE",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"idCliente\": 4,\r\n    \"nombres\": \"Jeemy Manuel\",\r\n    \"cedula\": \"1798765432\",\r\n    \"correo\": \"jeremanu@email.com\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7130/api/Cliente/4",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7130",
+                  "path": [
+                    "api",
+                    "Cliente",
+                    "4"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "DELETE-CLIENTE",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7130/api/Cliente/4",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7130",
+                  "path": [
+                    "api",
+                    "Cliente",
+                    "4"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
